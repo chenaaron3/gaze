@@ -2,6 +2,7 @@ import { type Session } from "next-auth";
 import { SessionProvider } from "next-auth/react";
 import { type AppType } from "next/app";
 import { ChakraProvider } from "@chakra-ui/react";
+import Script from "next/script";
 
 import { api } from "~/utils/api";
 
@@ -15,6 +16,10 @@ const MyApp: AppType<{ session: Session | null }> = ({
     <SessionProvider session={session}>
       <ChakraProvider>
         <Component {...pageProps} />
+        <Script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7669677916634585"
+        />
       </ChakraProvider>
     </SessionProvider>
   );

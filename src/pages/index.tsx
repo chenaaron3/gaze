@@ -36,7 +36,7 @@ export default function Home() {
             <Options />
           </div>
           <div className="select-none text-center font-mono text-[var(--sub-color)]">
-            Made in China
+            Inspired by Schultz Table
           </div>
         </div>
       </main>
