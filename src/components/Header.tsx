@@ -8,7 +8,7 @@ export const Header: React.FC = () => {
 
   return (
     <header
-      className={`flex select-none flex-row items-center gap-2 pt-5 text-4xl transition-colors ${
+      className={`flex select-none flex-row items-center justify-center gap-2 pt-5 text-4xl transition-colors sm:justify-start ${
         inProgress ? "text-[var(--sub-color)]" : "text-[var(--text-color)]"
       }`}
     >

@@ -27,7 +27,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="box-border flex items-center justify-center bg-[var(--bg-color)] font-mono">
-        <div className="flex min-h-screen w-2/3 flex-col justify-between p-5">
+        <div className="flex min-h-screen w-full flex-col justify-between p-5 sm:w-2/3">
           <Header />
           <div className="flex flex-col gap-5">
             <Display />
